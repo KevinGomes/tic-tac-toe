@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>HTML Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <p>This is a tic-tac-toe game.</p>
+
+  <button onclick="reset()">RESET</button>
+
+  <div class="grid-container">
+    <table  id="grid">
+
+      <tr>
+        <td class="square top right" onclick="placement(this.className)"></td>
+        <td class="square top center" onclick="placement(this.className)"></td>
+        <td class="square top left" onclick="placement(this.className)"></td>
+      </tr>
+
+      <tr>
+        <td class="square middle right" onclick="placement(this.className);"></td>
+        <td class="square middle center" onclick="placement(this.className);"></td>
+        <td class="square middle left" onclick="placement(this.className);"></td>
+      </tr>
+
+      <tr>
+        <td class="square bottom right" onclick="placement(this.className);"></td>
+        <td class="square bottom center" onclick="placement(this.className);"></td>
+        <td class="square bottom left" onclick="placement(this.className);"></td>
+      </tr>
+
+    </table>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
